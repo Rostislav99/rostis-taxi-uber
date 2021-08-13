@@ -1,0 +1,573 @@
+.header
+    position: relative
+
+.menu
+    position: fixed
+    height: 50px
+    width: 100%
+    background-color: #000
+    z-index: 5
+
+.hamburger
+    display: none
+
+.menu__list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 13px 84px
+    margin: 0
+
+.menu__list-item
+    list-style: none
+    border-right: 2px dotted coral
+    transition: all .5s
+    &:last-child
+        border-right: none
+
+.menu__list-item:hover
+    transform: translateY(-5px)
+
+.menu__list-link
+    text-decoration: none
+    font-weight: 300
+    font-size: 15px
+    line-height: 15px
+    color: $primary-color
+    margin-right: 42px
+    letter-spacing: 0.5px
+
+.menu__list-link:hover
+    color: #FFFFFF
+
+.subheader
+    margin-top: 39px
+    width: 100%
+    position: absolute
+    height: 84px
+    background-color: rgba(0, 0, 0, 0.6)
+
+.logo__img
+    width: 238px
+    height: 32px
+    margin-top: 17px
+
+.logo__text
+    margin-top: 4px
+    font-weight: 200
+    font-size: 13px
+    color: #FFFFFF
+
+.phone
+    display: block
+    margin-top: 24px
+    margin-right: 21px
+    text-align: right
+
+.phone__text
+    font-weight: 300
+    font-size: 13px
+    color: #FFFFFF
+
+.phone__link
+    display: block
+    font-weight: 400
+    font-size: 22px
+    text-transform: uppercase
+    color: #FFFFFF
+    text-decoration: none
+
+.phone__link:hover
+    color: #FFFFFF
+
+.btn
+    margin-top: 20px
+    display: block
+    font-weight: 400
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    width: 172px
+    height: 46px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    border-radius: 8px
+    border: none
+    transition: all .3s
+    -webkit-transition: all .3s
+    -moz-transition: all .3s
+    -ms-transition: all .3s
+    -o-transition: all .3s
+
+.btn:focus, .btn:active
+    outline: none
+
+.btn::-moz-focus-inner
+    border: 0
+
+.btn:active
+    transform: scale(0.9)
+    -webkit-transform: scale(0.9)
+    -moz-transform: scale(0.9)
+    -ms-transform: scale(0.9)
+    -o-transform: scale(0.9)
+
+.promo
+    padding: 150px 0 185px 0
+    min-height: 800px
+    background: url('../img/uber__bg.png')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+
+.promo__title
+    margin: 0
+    font-weight: 900
+    font-size: 60px
+    line-height: 24px
+    text-align: center
+    text-transform: uppercase
+    color: $primary-color
+
+.promo__subtitle
+    margin: 20px 0 0
+    font-weight: 400
+    font-size: 36px
+    line-height: 48px
+    text-align: center
+    text-transform: uppercase
+    color: $primary-color
+
+.promo__text
+    margin-top: 18px
+    font-weight: 400
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+    color: #fff
+
+.promo__text:nth-last-child(2)
+    margin-bottom: 35px
+
+.promo__btn
+    display: block
+    margin: 0 auto
+    margin-top: 100px
+    width: 259px
+    height: 63px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+    border-radius: 8px
+    font-weight: 400
+    font-size: 18px
+    line-height: 63px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    border: none
+    transition: all .3s
+    -webkit-transition: all .3s
+    -moz-transition: all .3s
+    -ms-transition: all .3s
+    -o-transition: all .3s
+
+.promo__btn:hover
+    transform: scale(1.2)
+    background: #ec0d0d
+    color: #fff
+
+    .promo__btn:before
+        content: ""
+        left: 150px
+        transition: .8s ease-in-out
+
+.promo__btn:focus
+    content: ""
+    color: #c3ec0c
+    background-color: $importent-color
+
+.promo__btn:active
+    transform: scale(0.99)
+
+.descr
+    min-height: 850px
+    padding: 18px 0 64px 0
+    background: rgb(109, 97, 108)
+
+.descr__suptitle
+    margin: 0 auto
+    padding: 7px
+    font-weight: 400
+    font-size: 11px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    width: 115px
+    height: 27px
+    background: #000000
+
+.descr__title
+    margin-top: 33px
+    font-weight: 900
+    font-size: 45px
+    line-height: 48px
+    text-align: center
+    text-transform: uppercase
+    color: #222222
+
+.descr__info-flex
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+
+.descr__img
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1EACC7
+    border-radius: 100%
+
+.descr__icon-text
+    max-width: 343px
+    font-weight: 300
+    font-size: 15px
+    color: #c2ff8a
+
+span
+    font-weight: 400
+    font-size: 17px
+    line-height: 21px
+    color: #1EACC7
+
+.mobile
+    padding: 48px 0 80px 0
+    min-height: 940px
+    background-image: url('../img/bg/mobile__bg.png')
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
+
+    .mobile__suptitle
+        font-size: 17px
+        font-weight: 400
+        text-align: center
+        color: #050305
+.mobile .row
+    margin-top: 30px
+
+    .mobile__card
+        position: relative
+        margin: 0 auto 20px
+        width: 320px
+        height: 280px
+
+    .mobile__card-1
+        background-image: url('../img/card__1.png')
+
+    .mobile__card-2
+        background-image: url('../img/card__2.png')
+
+    .mobile__card-3
+        background-image: url('../img/card__3.png')
+
+    .mobile__card-4
+        background-image: url('../img/card__4.png')
+
+    .mobile__card-5
+        background-image: url('../img/card__5.png')
+
+    .mobile__card-6
+        background-image: url('../img/card__6.png')
+
+    .mobile__card-subtitle
+
+        padding-top: 92px
+        font-size: 24px
+        font-weight: 500
+        font-stretch: normal
+        line-height: 1.29
+        text-align: center
+        text-transform: uppercase
+        color: #ffffff
+
+    .mobile__card-img
+        position: absolute
+        bottom: 35px
+        left: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 26px
+        height: 26px
+        border-radius: 100%
+        background-color: #000000
+        transform: translateX(-50%)
+        cursor: pointer
+        transition: all (.4s)
+
+        &::before
+            display: block
+            content: ""
+            position: absolute
+            width: 14px
+            height: 2px
+            background-color: $primary-color
+
+        &::after
+            display: block
+            content: ""
+            position: absolute
+            width: 2px
+            height: 14px
+            background-color: $primary-color
+
+        &:hover
+            position: absolute
+            background-color: #dfbf0d
+
+.option
+    position: relative
+    height: 500px
+    background: #070716
+    padding-top: 57px
+
+    .option__suptitle
+        margin: 0 auto
+        padding: 7px
+        font-weight: 400
+        font-size: 11px
+        text-align: center
+        text-transform: uppercase
+        color: #000
+        width: 115px
+        height: 27px
+        background: #fff
+
+    .option__title
+        margin: 27px 0 0 0
+        font-size: 38px
+        font-weight: 700
+        font-stretch: normal
+        letter-spacing: normal
+        text-align: center
+        color: #ffffff
+        text-transform: uppercase
+
+    .option__subtitle
+        font-size: 17px
+        font-weight: 500
+        font-stretch: normal
+        letter-spacing: normal
+        text-align: center
+        color: #ffffff
+
+    .option__img
+        display: block
+        margin: 55px auto 0
+
+    .option__boottom
+        position: absolute
+        height: inherit
+        width: 100%
+        background-color: #c7b96b91
+        top: 500px
+        z-index: -1
+
+    .option__text
+        margin-bottom: 138px
+        font-size: 17px
+        font-weight: 400
+        font-stretch: normal
+        line-height: 1.24
+        letter-spacing: normal
+        text-align: center
+        color: $importent-color
+
+.condition
+    margin-top: 500px
+    padding: 66px 0 87px 0
+    background-color: #0ada4fbe
+
+    .condition__wrapper
+        margin-top: 87px
+
+    .condition__title-list span
+        margin-top: 37px
+        color: $color-blue
+        font-weight: 500
+        font-size: 22px
+        line-height: 24px
+
+    .condition__title-list
+        color: $color-red
+        font-weight: 500
+        font-size: 22px
+        line-height: 24px
+
+    .condition__list
+        margin-top: 20px
+        list-style: none
+
+    .condition__list-about
+        position: relative
+        margin-bottom: 10px
+        font-weight: 300
+        font-size: 17px
+        text-align: left
+        color: #222222
+
+    .condition__list-about::before
+        position: absolute
+        left: -34px
+        content: ""
+        display: block
+        width: 21px
+        height: 20px
+        background: url('../icons/check_blue.svg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+
+    .check_red::before
+        content: ""
+        background: url('../icons/check_red.svg')
+
+    .condition p
+        font-weight: 300
+        font-size: 17px
+        color: #1CA8C3
+
+.footer
+    padding: 45px 0 50px 0
+    background: #080816
+    background-image: url('../img/footer_bg.png')
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: auto
+    width: 100%
+    min-height: 720px
+
+    &__suptitle a
+        display: block
+        text-decoration: none
+        margin: 0 auto
+        padding: 7px
+        font-weight: 400
+        font-size: 11px
+        text-align: center
+        text-transform: uppercase
+        color: #070716
+        width: 76px
+        height: 24px
+        background: #FFFFFF
+
+    &__title
+        margin: 26px 0 0
+        font-weight: 700
+        font-size: 38px
+        line-height: 48px
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+
+    &__subtitle
+        font-weight: 500
+        font-size: 17px
+        text-align: center
+        color: #FFFFFF
+
+    .text__footer
+        display: block
+        margin-top: 488px
+        text-decoration: none
+        font-weight: 500
+        font-size: 15px
+        text-align: center
+        text-transform: uppercase
+        color: #1FBAD6
+
+.footer__bottom
+    min-height: 155px
+    background: #e7d1d1
+
+    .bottom__flex-link
+        display: flex
+        justify-content: space-between
+        align-items: center
+        transform: translateY(-15px)
+        // padding: 56px 0 79px 0
+
+    .list__item-flex
+        margin-left: -25px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    .list__item
+        margin-left: 10px
+        list-style-type: none
+        transition: all (0.3s)
+
+    .list__item:hover
+        transform: translateY(-5px)
+
+    .link__item
+        display: block
+        background: #b7b91c
+        border: 1px solid #d8701b
+        width: 27px
+        height: 27px
+        border-radius: 100%
+
+    .link__img
+        display: inline-block
+        margin-top: 2px
+        margin-left: 4px
+        width: 18px
+        height: 18px
+
+    .bottom__flex-links
+        margin-right: 23px
+
+    .blue__border
+        margin: 11px auto 0
+        width: 301px
+        height: 7px
+        background: #1FBAD6
+
+    .footer__bottom-info
+        margin-top: 32px
+        margin-left: 22px
+        font-weight: 300
+        font-size: 16px
+        text-transform: uppercase
+
+    .footer__bottom-info a
+        margin: 0 5px
+        text-decoration: none
+        color: #899c6f
+
+    .footer__bottom-info-1
+        margin-left: 23px
+
+    .footer__bottom-info-1 a
+        display: inline-block
+        text-decoration: none
+        margin: 7px 4px 0
+        font-weight: 300
+        font-size: 11px
+        color: #ca6d15
+
+    .language__footer
+        margin-top: 16px
+        text-decoration: none
+        font-weight: 400
+        font-size: 11px
+        text-align: center
+        text-transform: uppercase

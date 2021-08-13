@@ -1,0 +1,413 @@
+@media ( max-width: 1399px )
+    .menu__list-item
+        border-right: none
+        margin: 0 22px 0 0
+
+    .menu__list-link
+        margin-right: 0
+
+    .phone__link
+        font-size: 18px
+
+    .phone__text
+        font-weight: 200
+        font-size: 12px
+
+    .btn
+        margin-top: 26px
+        width: 150px
+        height: 40px
+        font-weight: 300
+
+    .footer__bottom .footer__bottom-info a
+        margin: 0
+    .footer__bottom .footer__bottom-info-1 a
+        margin: 7px 0
+@media ( max-width: 1200px )
+    .menu__list
+        flex: none
+    .menu__list-link
+        font-size: 13px
+
+    .phone
+        margin-left: 78px
+
+    .phone__link
+        text-align: left
+        margin-right: -29px
+
+    .phone__text
+        font-size: 10px
+        text-align: right
+        margin-right: -25px
+
+    .btn
+        width: 130px
+        height: 30px
+        font-weight: 200
+        font-size: 11px
+        margin-top: 37px
+
+    .promo__title
+        font-weight: 700
+        font-size: 56px
+
+    .promo__subtitle
+        font-weight: 300
+        font-size: 32px
+
+    .descr__img
+        width: 87px
+        height: 87px
+
+    .mobile__card
+        max-width: 100%
+
+    .footer__bottom-info
+        // margin: 0
+        // display: flex
+        // justify-content: center
+        // align-items: flex-end
+
+    .footer__bottom .footer__bottom-info
+        display: block
+        text-align: center
+        // margin: 0 auto
+
+    .footer__bottom .footer__bottom-info-1
+        display: block
+        text-align: center
+
+    .footer__bottom .language__footer
+        display: block
+        font-size: 16px
+
+@media ( max-width: 991px )
+    // body
+    //     width: 100%
+
+    .menu__list
+        display: flex
+        align-content: stretch
+        padding: 11px 21px
+
+    .menu__list-item
+        margin: 0
+
+    .menu__list-link
+        letter-spacing: 0
+        padding: 0
+
+    .logo__img
+        width: 105%
+
+    .logo__text
+        font-size: 12px
+
+    .phone
+        margin-left: -20px
+
+    .phone__link
+        // text-align: left
+        margin-left: 51px
+        font-size: 16px
+
+    .phone__text
+        font-size: 11px
+        text-align: right
+        margin-right: -20px
+
+    .btn
+        margin-top: 33px
+
+    .promo__title
+        font-weight: 500
+        font-size: 35px
+
+    .promo__subtitle
+        font-weight: 300
+        font-size: 21px
+
+    .descr__info-flex
+        display: flex
+        flex-direction: column
+
+    .descr__icon-text
+        margin-top: 24px
+
+    .mobile__card
+        max-height: 70%
+
+    .mobile .row .mobile__card-subtitle
+        font-size: 16px
+
+    .option .option__img
+        width: 100%
+
+    .footer__bottom .blue__border
+        width: 100%
+        transform: translate(10px, 10px)
+
+    .footer__bottom .language__footer
+        margin-left: -10px
+
+@media ( max-width: 767px )
+
+    .hamburger
+        // меню из 3 полосок
+        display: block
+        position: absolute
+        height: 8px
+        width: 30px
+        right: 20px
+        top: 50%
+        transform: translateY(-50%)
+        transition: 0.4s all
+        span
+            display: block
+            width: 100%
+            height: 2px
+            background-color: #fff
+            margin-bottom: 6px
+    .hamburger__active
+        // крестик
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+        span
+            &:nth-child(2)
+                display: none
+        span
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+
+    .menu__list
+        // выпадающее меню
+        position: fixed
+        z-index: 3
+        left: -100%
+        height: 100vh
+        width: 50%
+        display: none
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: rgba(0, 0, 0, 0.8)
+        transition: .4s all
+
+    .menu__list-active
+        // выпадающее меню
+        left: 0
+        top: 0
+
+    .menu__list-item
+        font-size: 20px
+        margin-bottom: 20px
+
+    .menu__list-link
+        font-size: 20px
+        margin-bottom: 20px
+
+    .logo__img
+        width: 190px
+
+    // .phone__link
+    //     margin-left: 306px
+    //     margin-top: -2px
+    //     font-size: 16px
+
+    // .btn
+    //     margin-right: 85px
+    //     margin-top: -58px
+    .phone
+        position: absolute
+        right: 220px
+        display: block
+        top: 11px
+        margin-right: -23px
+
+    .phone__text
+        margin-right: -28px
+    .phone__link
+        font-size: 14px
+    .btn
+        position: absolute
+        right: 50px
+        top: 3px
+        width: 110px
+
+    .promo__text
+        font-weight: 300
+        font-size: 18px
+        line-height: 23px
+
+    .descr__title
+        font-size: 29px
+
+    .mobile__card
+
+        max-height: 80%
+
+    .mobile .row .mobile__card-subtitle
+        font-size: 18px
+
+    .option .option__img
+        width: 100%
+
+    .footer__bottom .language__footer
+        margin-left: 21px
+
+    .footer__bottom .bottom__flex-link
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        margin-top: 20px
+
+@media ( max-width: 576px )
+    .menu
+        height: 30px
+
+    .menu__list
+        width: 64%
+
+    .menu__list-item
+        width: 100%
+        text-align: center
+
+    .menu__list-link
+        display: block
+        padding: 5px 0
+
+    .hamburger
+        // меню из 3 полосок
+        display: block
+        position: absolute
+        width: 20px
+        right: 20px
+        top: 50%
+        transform: translateY(-50%)
+        transition: 0.4s all
+        span
+            display: block
+            width: 100%
+            height: 1px
+            background-color: #fff
+            margin-bottom: 4px
+
+    .hamburger__active
+        // крестик
+        span
+            margin-bottom: -1px
+            &:nth-child(1)
+                transform: rotate(-45deg)
+        span
+            &:nth-child(2)
+                display: none
+        span
+            &:nth-child(3)
+                transform: rotate(45deg)
+
+    .menu__list-link
+        font-size: 14px
+        font-weight: 200
+        margin-bottom: 5px
+
+    .subheader
+        margin-top: 21px
+
+    .logo__img
+        width: 165px
+        height: 30%
+
+    .logo__text
+        display: none
+
+    .phone
+        // margin-right: -57px
+        position: absolute
+        right: 66px
+        top: -23px
+
+    .phone__link
+        font-size: 15px
+        margin-top: 5px
+
+    .phone__text
+        display: none
+
+    .btn
+        margin-right: -33px
+        margin-top: 34px
+
+    .promo
+        min-height: 400px
+        padding: 112px 0 49px 0
+        line-height: 28px
+
+    .promo__title
+        font-size: 26px
+
+    .promo__subtitle
+        font-size: 16px
+    .promo__text
+        display: none
+
+    .descr__title
+        margin: 0
+        font-weight: 700
+        font-size: 16px
+        text-align: center
+        text-transform: uppercase
+        color: #222222
+
+    .descr__info-flex
+        margin: 0
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    .descr__img
+        margin: 24px 0
+
+    .option
+        height: 478px
+        padding: 10px 0
+
+    .option__title
+        display: none
+
+    .option .option__subtitle
+        display: none
+
+    .option .option__boottom
+        background-color: transparent
+
+    .option .option__text
+        display: flex
+        justify-content: center
+        margin-top: 0px
+        margin-bottom: 0
+        font-size: 19px
+
+    .option .option__img
+        width: 100%
+
+    .footer__bottom .blue__border
+        display: block
+        width: 100%
+        margin-left: -8px
+
+    .condition
+        margin-top: 0
+    .footer__bottom .list__item-flex
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 auto 20px
+        padding: 0
+    .footer__bottom .bottom__flex-links
+        margin: 0
